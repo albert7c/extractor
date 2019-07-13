@@ -55,8 +55,10 @@ export default class BowerJsonExtractor implements Extractor {
 
         return {
             language: Languages.NODE,
-            system: "npm",
-            organization, module, version,
+            system: "bower",
+            organization,
+            module,
+            version,
             dependencies: allDependencies,
         };
     }
