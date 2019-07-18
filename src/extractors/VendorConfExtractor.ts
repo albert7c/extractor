@@ -50,14 +50,13 @@ export default class VendorConfExtractor implements Extractor {
         id[moduleString] = null;
         let idFlag = true;
         const dependencies = [];
-
-        for (let i = 0; i < lines.length; i++) {
-            let line = lines[i].trim();
-            if (line.length === 0) {
+        for (var line of lines) {
+            let trimmedLine = line.trim();
+            if (trimmedLine.length === 0) {
                 continue; // empty line
             }
 
-            const parts = line.split(/\s+/);
+            const parts = trimmedLine.split(/\s+/);
             const directive = parts[0];
             if (directive === '#') {
                 continue;
@@ -84,7 +83,6 @@ export default class VendorConfExtractor implements Extractor {
             };
 
             dependencies.push(dependencyMap);
-
         }
 
         if (id[organizationString] === null || id[moduleString] === null) {
