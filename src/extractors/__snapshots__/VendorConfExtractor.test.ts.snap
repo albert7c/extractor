@@ -4,19 +4,19 @@ exports[`VendorConfExtractor fullParse 1`] = `
 Object {
   "dependencies": Array [
     Object {
-      "module": "testGitHubModule1",
-      "organization": "testGitHubOrg1",
+      "module": "testGitHubOrg1/testGitHubModule1",
+      "organization": "github.com",
       "scopes": Array [],
       "versionConstraint": "v1.0.0",
     },
     Object {
-      "module": "testGitHubModule2",
-      "organization": "testGitHubOrg2",
+      "module": "testGitHubOrg2/testGitHubModule2",
+      "organization": "github.com",
       "scopes": Array [],
       "versionConstraint": "v1.1.0",
     },
     Object {
-      "module": "testGolangModule1",
+      "module": "x/testGolangModule1",
       "organization": "golang.org",
       "scopes": Array [],
       "versionConstraint": "2509b34242342d548f113b2sdfd4ffvfwedfsgc0f20ce",
@@ -28,13 +28,13 @@ Object {
       "versionConstraint": "eb3733d160e74a9c2f435eb3be34r4ra458e1d19fregd",
     },
     Object {
-      "module": "testGitHubModule3",
-      "organization": "testGitHubOrg3",
+      "module": "testGitHubOrg3/testGitHubModule3",
+      "organization": "github.com",
       "scopes": Array [],
       "versionConstraint": "a9fbbdc8dd8794b20affgfg358382ab780d559bca589d",
     },
     Object {
-      "module": "testGolangModule2",
+      "module": "x/testGolangModule2",
       "organization": "golang.org",
       "scopes": Array [],
       "versionConstraint": "186fd3fc8194a5e9xcvbd6dfdsawef3g9c1ff7134229f",
@@ -54,20 +54,20 @@ Object {
       "versionConstraint": "v1.0.0",
     },
     Object {
-      "module": "testGitHubModule4",
-      "organization": "testGitHubOrg4",
+      "module": "testGitHubOrg4/testGitHubModule4",
+      "organization": "github.com",
       "scopes": Array [],
       "versionConstraint": "v1.0.0",
     },
     Object {
-      "module": "testGolangModule3",
+      "module": "x/testGolangModule3",
       "organization": "golang.org",
       "scopes": Array [],
       "versionConstraint": "fd80eb99c8f653c8sdfds47d294a001bdf2a3a6f768f5",
     },
     Object {
-      "module": "testGitHubModule5",
-      "organization": "testGitHubOrg5",
+      "module": "testGitHubOrg5/testGitHubModule5",
+      "organization": "github.com",
       "scopes": Array [
         "transitive=true",
       ],
@@ -83,8 +83,8 @@ Object {
     },
   ],
   "language": "go",
-  "module": "testMainModule",
-  "organization": "testMainOrg",
+  "module": "testMainOrg/testMainModule",
+  "organization": "github.com",
   "system": "vendor",
   "version": "latest",
 }
@@ -94,25 +94,25 @@ exports[`VendorConfExtractor fullParse 2`] = `
 "{
   \\"language\\": \\"go\\",
   \\"system\\": \\"vendor\\",
-  \\"organization\\": \\"testMainOrg\\",
-  \\"module\\": \\"testMainModule\\",
+  \\"organization\\": \\"github.com\\",
+  \\"module\\": \\"testMainOrg/testMainModule\\",
   \\"version\\": \\"latest\\",
   \\"dependencies\\": [
     {
-      \\"organization\\": \\"testGitHubOrg1\\",
-      \\"module\\": \\"testGitHubModule1\\",
+      \\"organization\\": \\"github.com\\",
+      \\"module\\": \\"testGitHubOrg1/testGitHubModule1\\",
       \\"versionConstraint\\": \\"v1.0.0\\",
       \\"scopes\\": []
     },
     {
-      \\"organization\\": \\"testGitHubOrg2\\",
-      \\"module\\": \\"testGitHubModule2\\",
+      \\"organization\\": \\"github.com\\",
+      \\"module\\": \\"testGitHubOrg2/testGitHubModule2\\",
       \\"versionConstraint\\": \\"v1.1.0\\",
       \\"scopes\\": []
     },
     {
       \\"organization\\": \\"golang.org\\",
-      \\"module\\": \\"testGolangModule1\\",
+      \\"module\\": \\"x/testGolangModule1\\",
       \\"versionConstraint\\": \\"2509b34242342d548f113b2sdfd4ffvfwedfsgc0f20ce\\",
       \\"scopes\\": []
     },
@@ -123,14 +123,14 @@ exports[`VendorConfExtractor fullParse 2`] = `
       \\"scopes\\": []
     },
     {
-      \\"organization\\": \\"testGitHubOrg3\\",
-      \\"module\\": \\"testGitHubModule3\\",
+      \\"organization\\": \\"github.com\\",
+      \\"module\\": \\"testGitHubOrg3/testGitHubModule3\\",
       \\"versionConstraint\\": \\"a9fbbdc8dd8794b20affgfg358382ab780d559bca589d\\",
       \\"scopes\\": []
     },
     {
       \\"organization\\": \\"golang.org\\",
-      \\"module\\": \\"testGolangModule2\\",
+      \\"module\\": \\"x/testGolangModule2\\",
       \\"versionConstraint\\": \\"186fd3fc8194a5e9xcvbd6dfdsawef3g9c1ff7134229f\\",
       \\"scopes\\": []
     },
@@ -149,20 +149,20 @@ exports[`VendorConfExtractor fullParse 2`] = `
       ]
     },
     {
-      \\"organization\\": \\"testGitHubOrg4\\",
-      \\"module\\": \\"testGitHubModule4\\",
+      \\"organization\\": \\"github.com\\",
+      \\"module\\": \\"testGitHubOrg4/testGitHubModule4\\",
       \\"versionConstraint\\": \\"v1.0.0\\",
       \\"scopes\\": []
     },
     {
       \\"organization\\": \\"golang.org\\",
-      \\"module\\": \\"testGolangModule3\\",
+      \\"module\\": \\"x/testGolangModule3\\",
       \\"versionConstraint\\": \\"fd80eb99c8f653c8sdfds47d294a001bdf2a3a6f768f5\\",
       \\"scopes\\": []
     },
     {
-      \\"organization\\": \\"testGitHubOrg5\\",
-      \\"module\\": \\"testGitHubModule5\\",
+      \\"organization\\": \\"github.com\\",
+      \\"module\\": \\"testGitHubOrg5/testGitHubModule5\\",
       \\"versionConstraint\\": \\"52f73c5a6cb0d1d19cvxv6ffd6eced406c9d85020v78a\\",
       \\"scopes\\": [
         \\"transitive=true\\"

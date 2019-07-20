@@ -14,21 +14,19 @@ const organizationString = "organization";
 const moduleString = "module";
 
 function parseName(dependency: string): ID {
-    let organization = "_";
+    let organization = "";
     let module = "";
     let dependencyArray = [];
     dependencyArray = dependency.split("/");
-    if (dependency.includes("github.com")) {
-        organization = dependencyArray[1];
-        module = dependencyArray[2];
-    } else if (dependency.includes("golang.org")) {
-        organization = dependencyArray[0];
-        module = dependencyArray[2];
-    } else {
-        organization = dependencyArray[0];
-        module = dependencyArray[1];
-        if (dependencyArray[2] != null) {
-            module = module + "/" + dependencyArray[2];
+    for (var dependencyIndex in dependencyArray) {
+        if (organization === "") {
+            organization = dependencyArray[dependencyIndex];
+        } else {
+            if (module === "") {
+                module = dependencyArray[dependencyIndex];
+            } else {
+                module = module + "/" + dependencyArray[dependencyIndex];
+            }
         }
     }
 
